@@ -18,11 +18,11 @@ const App = () => {
         <View>
           <Text style={estils.titol}> Resultats Lliga 24-25 </Text>
           <Image style={estils.imatge} source={require('./src/assets/img/images.jpg')}></Image>
-          <Partit e1='Valencia CF' e2='Betis' r1='3' r2='2'></Partit>
-          <Partit e1='Osasuna CF' e2='Oviedo' r1='2' r2='1'></Partit>
-          <Partit e1='Real Madrid CF' e2='Barcelona CF' r1='1' r2='3'></Partit>
-          <Partit e1='Rayo Vallecano' e2='Real Sociedad' r1='0' r2='1'></Partit>
-          <Partit e1='Villareal' e2='Español' r1='4' r2='1'></Partit>
+          <Partit e1='Raimon' e2='Royal Academy' r1='1' r2='10'></Partit>
+          <Partit e1='Raimon' e2='Occult' r1='2' r2='1'></Partit>
+          <Partit e1='Raimon' e2='Wild' r1='1' r2='0'></Partit>
+          <Partit e1='Raimon' e2='Brain' r1='2' r2='1'></Partit>
+          <Partit e1='Raimon' e2='Royal Academy' r1='3' r2='2'></Partit>
         </View>
       </ScrollView>
     </View>
