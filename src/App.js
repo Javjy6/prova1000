@@ -8,24 +8,13 @@ import {
   View,
 } from 'react-native';
 import Partit from './src/components/partit/Partit';
+import {Provider as PaperProvider} from "react-native-paper";
 
 /** A la funció App, dins del return crearem la notra pantalla */
 const App = () => {
   return (
-    <View>
-      <StatusBar/>
-      <ScrollView>
-        <View>
-          <Text style={estils.titol}> Resultats Lliga 24-25 </Text>
-          <Image style={estils.imatge} source={require('./src/assets/img/images.jpg')}></Image>
-          <Partit e1='Raimon' e2='Royal Academy' r1='1' r2='10'></Partit>
-          <Partit e1='Raimon' e2='Occult' r1='2' r2='1'></Partit>
-          <Partit e1='Raimon' e2='Wild' r1='1' r2='0'></Partit>
-          <Partit e1='Raimon' e2='Brain' r1='2' r2='1'></Partit>
-          <Partit e1='Raimon' e2='Royal Academy' r1='3' r2='2'></Partit>
-        </View>
-      </ScrollView>
-    </View>
+    <PaperProvider>
+    </PaperProvider>
   );
 }
 
