@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, ScrollView, StatusBar, StyleSheet, View} from 'react-native';
-import {PaperProvider, Text } from "react-native-paper";
+import {PaperProvider, Text, TextInput } from "react-native-paper";
 
 const textAMostrar = () => {
   return(
@@ -8,11 +8,24 @@ const textAMostrar = () => {
   )
 }
 
+const dadesImput = () => {
+  const [text, setText] = React.useState("");
+
+  return (
+    <TextInput
+      label="Escribe aqui"
+      value={text}
+      onChangeText={text => setText(text)}
+    />
+  );
+};
+
 /** A la funció App, dins del return crearem la notra pantalla */
 const App = () => {
   return (
     <PaperProvider>
       {textAMostrar()}
+      {dadesImput()}
     </PaperProvider>
   );
 }
