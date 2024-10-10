@@ -1,19 +1,18 @@
 import React from 'react';
-import {
-  Image,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import Partit from './src/components/partit/Partit';
-import {Provider as PaperProvider} from "react-native-paper";
+import {Image, ScrollView, StatusBar, StyleSheet, View} from 'react-native';
+import {PaperProvider, Text } from "react-native-paper";
+
+const textAMostrar = () => {
+  return(
+    <Text style={estils.titol}>Hola mundo</Text>
+  )
+}
 
 /** A la funció App, dins del return crearem la notra pantalla */
 const App = () => {
   return (
     <PaperProvider>
+      {textAMostrar()}
     </PaperProvider>
   );
 }
