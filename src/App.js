@@ -1,8 +1,9 @@
 import React from 'react';
-import {Image, ScrollView, StatusBar, StyleSheet, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {PaperProvider, Text, TextInput } from "react-native-paper";
 
 const dades = ["Email", "Nom"];
+const estil = 'florida';
 
 const textAMostrar = () => {
   return(
@@ -12,6 +13,7 @@ const textAMostrar = () => {
 
 const dadesImput = () => {
   const [text, setText] = React.useState("");
+  const estilPare = estil === 'florida' ? estils.florida : estils.upv;
   return (
     dades.map((nombre, index) => (
       <TextInput key={index.toString()}
