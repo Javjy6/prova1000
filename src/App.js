@@ -2,6 +2,8 @@ import React from 'react';
 import {Image, ScrollView, StatusBar, StyleSheet, View} from 'react-native';
 import {PaperProvider, Text, TextInput } from "react-native-paper";
 
+const dades = ["Email", "Nom"];
+
 const textAMostrar = () => {
   return(
     <Text style={estils.titol}>Hola mundo</Text>
@@ -10,14 +12,15 @@ const textAMostrar = () => {
 
 const dadesImput = () => {
   const [text, setText] = React.useState("");
-
   return (
-    <TextInput
-      label="Escribe aqui"
+    dades.map((nombre, index) => (
+      <TextInput key={index.toString()}
+      label={nombre}
       value={text}
       onChangeText={text => setText(text)}
     />
-  );
+    ))
+  )
 };
 
 /** A la funció App, dins del return crearem la notra pantalla */
